@@ -1,0 +1,23 @@
+gcd    CMP R1,R2
+SUBGT  SUB R1,R1,R2
+SUBLT  SUB R2,R2,R1
+BNE    gcd
+
+
+AREA gcdcalc, CODE, READWRITE
+       ENTRY
+       MOV	R0,#30 ; test values
+       MOV R1,#45 ; test values
+gcd
+while  CMP R0,R1
+       BEQ endw
+       BGT cond1
+       B cond2
+cond1  SUB R0,R1
+       B gcd
+cond2  SUB R1,R0
+       B gcd
+       B while
+endw
+stop   B stop
+       END
