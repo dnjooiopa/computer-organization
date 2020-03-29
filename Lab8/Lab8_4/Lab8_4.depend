@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1585144587 source:/home/pi/Assembly/Lab8/Lab8_4/add_s.s
+
+1585145690 source:/home/pi/Assembly/Lab8/Lab8_4/main.c
+	<stdio.h>
+
+1585144529 source:/home/pi/Assembly/Lab8/Lab8_4/gcd_s.s
+
+1585145275 source:/home/pi/Assembly/Lab8/Lab8_4/mod_s.s
+
